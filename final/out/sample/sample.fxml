@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cuni.mff.kurankot.busreservationsystem.Controller">
+    <content>
+        <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <Pane fx:id="main" prefHeight="200.0" prefWidth="400.0" GridPane.columnIndex="1">
+                    <children>
+                        <TextField fx:id="from" layoutX="146.0" layoutY="21.0" />
+                        <TextField fx:id="to" layoutX="146.0" layoutY="46.0" />
+                        <TextField fx:id="time" layoutX="146.0" layoutY="71.0" prefHeight="25.0" prefWidth="57.0" promptText="00:00" text="00:00" />
+                        <DatePicker fx:id="date" layoutX="205.0" layoutY="71.0" prefHeight="25.0" prefWidth="90.0" />
+                        <Label layoutX="89.0" layoutY="21.0" prefHeight="25.0" prefWidth="57.0" text="Odkiaľ:" />
+                        <Label layoutX="89.0" layoutY="46.0" prefHeight="25.0" prefWidth="57.0" text="Kam:" />
+                        <Button fx:id="find" layoutX="168.0" layoutY="121.0" mnemonicParsing="false" onAction="#searchData" prefHeight="25.0" prefWidth="65.0" text="Hľadať" />
+                        <Label layoutX="89.0" layoutY="75.0" prefHeight="17.0" prefWidth="57.0" text="Kedy:" />
+                        <Line fx:id="vertLine" endX="701.0" endY="0.79290771484375" layoutX="-318.0" layoutY="165.0" startX="332.79290771484375" startY="0.7928932309150696" />
+                        <Label fx:id="route" layoutX="14.0" layoutY="175.0" prefHeight="17.0" prefWidth="370.0" />
+                        <GridPane fx:id="table" layoutX="17.0" layoutY="210.0" prefHeight="100.0" prefWidth="370.0" vgap="5.0" visible="false">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="208.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="80.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="80.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="80.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="214.0" style="-fx-font-weight: bold;" text="Odkiaľ/Prestup/Kam" textAlignment="CENTER" />
+                                <Label prefHeight="17.0" prefWidth="82.0" style="-fx-font-weight: bold;" text="Príchod" GridPane.columnIndex="1" />
+                                <Label prefHeight="17.0" prefWidth="66.0" style="-fx-font-weight: bold;" text="Odchod" GridPane.columnIndex="2" />
+                                <Label prefHeight="17.0" prefWidth="75.0" style="-fx-font-weight: bold;" text="Spoj" GridPane.columnIndex="3" />
+                                <Label prefHeight="20.0" prefWidth="199.0" text="Bratislava" GridPane.rowIndex="1" />
+                                <Label prefHeight="17.0" prefWidth="73.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label prefHeight="17.0" prefWidth="65.0" text="12:15" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                <Label prefHeight="17.0" prefWidth="73.0" text="101" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                <Label prefHeight="17.0" prefWidth="218.0" text="Zvolen" GridPane.rowIndex="2" />
+                                <Label prefHeight="17.0" prefWidth="70.0" text="14:15" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <Label prefHeight="17.0" prefWidth="69.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                <Label prefHeight="17.0" prefWidth="77.0" text="Prestup" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                <Label prefHeight="17.0" prefWidth="219.0" text="Zvolen" GridPane.rowIndex="3" />
+                                <Label prefHeight="17.0" prefWidth="96.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                <Label prefHeight="17.0" prefWidth="74.0" text="14:20" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                <Label prefHeight="17.0" prefWidth="75.0" text="301" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                <Label prefHeight="17.0" prefWidth="200.0" text="Banská Bystrica" GridPane.rowIndex="4" />
+                                <Label prefHeight="17.0" prefWidth="77.0" text="14:50" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                            </children>
+                        </GridPane>
+                    </children>
+                </Pane>
+            </children>
+        </GridPane>
+    </content>
+</ScrollPane>

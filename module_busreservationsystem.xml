@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_busreservationsystem" default="compile.module.busreservationsystem">
+  <dirname property="module.busreservationsystem.basedir" file="${ant.file.module_busreservationsystem}"/>
+  
+  <property name="module.jdk.home.busreservationsystem" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.busreservationsystem" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.busreservationsystem" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.busreservationsystem" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="busreservationsystem.output.dir" value="${module.busreservationsystem.basedir}/out/production/BusReservationSystem"/>
+  <property name="busreservationsystem.testoutput.dir" value="${module.busreservationsystem.basedir}/out/test/BusReservationSystem"/>
+  
+  <path id="busreservationsystem.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="busreservationsystem.module.production.classpath">
+    <path refid="${module.jdk.classpath.busreservationsystem}"/>
+    <path refid="library.maven:_com.google.code.gson:gson:2.8.5.classpath"/>
+  </path>
+  
+  <path id="busreservationsystem.runtime.production.module.classpath">
+    <pathelement location="${busreservationsystem.output.dir}"/>
+    <path refid="library.maven:_com.google.code.gson:gson:2.8.5.classpath"/>
+  </path>
+  
+  <path id="busreservationsystem.module.classpath">
+    <path refid="${module.jdk.classpath.busreservationsystem}"/>
+    <pathelement location="${busreservationsystem.output.dir}"/>
+    <path refid="library.maven:_com.google.code.gson:gson:2.8.5.classpath"/>
+  </path>
+  
+  <path id="busreservationsystem.runtime.module.classpath">
+    <pathelement location="${busreservationsystem.testoutput.dir}"/>
+    <pathelement location="${busreservationsystem.output.dir}"/>
+    <path refid="library.maven:_com.google.code.gson:gson:2.8.5.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.busreservationsystem">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.busreservationsystem">
+    <patternset refid="excluded.from.module.busreservationsystem"/>
+  </patternset>
+  
+  <path id="busreservationsystem.module.sourcepath">
+    <dirset dir="${module.busreservationsystem.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.busreservationsystem" depends="compile.module.busreservationsystem.production,compile.module.busreservationsystem.tests" description="Compile module BusReservationSystem"/>
+  
+  <target name="compile.module.busreservationsystem.production" depends="register.custom.compilers" description="Compile module BusReservationSystem; production classes">
+    <mkdir dir="${busreservationsystem.output.dir}"/>
+    <javac2 destdir="${busreservationsystem.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.busreservationsystem}/javac">
+      <compilerarg line="${compiler.args.busreservationsystem}"/>
+      <bootclasspath refid="busreservationsystem.module.bootclasspath"/>
+      <classpath refid="busreservationsystem.module.production.classpath"/>
+      <src refid="busreservationsystem.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.busreservationsystem"/>
+    </javac2>
+    
+    <copy todir="${busreservationsystem.output.dir}">
+      <fileset dir="${module.busreservationsystem.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.busreservationsystem.tests" depends="register.custom.compilers,compile.module.busreservationsystem.production" description="compile module BusReservationSystem; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.busreservationsystem" description="cleanup module">
+    <delete dir="${busreservationsystem.output.dir}"/>
+    <delete dir="${busreservationsystem.testoutput.dir}"/>
+  </target>
+</project>

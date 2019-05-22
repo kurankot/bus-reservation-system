@@ -1,0 +1,43 @@
+<?xml version = "1.0" ?>
+<project basedir="." default="Run">
+	<path id="classpath">
+        <fileset dir="lib" />
+    </path>
+    <property file="build.properties"/>
+    <target name="Compile">
+        <javac srcdir="${src.dir}"
+               destdir="${out.dir}"
+               encoding="${java.encoding}"
+               includeantruntime="false"
+               debug="true"
+               debuglevel="lines,vars,source">
+			<classpath refid="classpath"/>
+		</javac>
+        <copy todir="${out.dir}">
+            <fileset dir="${src.dir}">
+                <include name="**/*.fxml"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="CreateJar" depends="Compile">
+        <manifest file="${out.dir}/MANIFEST.MF">
+            <attribute name="Main-Class"
+                       value="${main.class}"/>
+        </manifest>
+		
+        <jar jarfile="${jar.file}"
+             basedir="${out.dir}"
+             manifest="${out.dir}/MANIFEST.MF"> 
+			<zipgroupfileset dir="${lib.dir}" includes="/*.jar"/>
+		</jar>
+    </target>
+    <target name="Run" depends="CreateJar">
+        <java dir="."
+              jar="${jar.file}"
+              fork="true"/>
+    </target>
+    <target name="JavaDoc">
+        <javadoc sourcepath="${src.dir}" destdir="${doc.dir}">
+        </javadoc>
+    </target>
+</project>

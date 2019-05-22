@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<ScrollPane prefHeight="353.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cuni.mff.kurankot.busreservationsystem.Controller">
+    <content>
+        <GridPane alignment="center" hgap="10" prefHeight="350.0" prefWidth="410.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <Pane fx:id="mainBuyTicket" prefHeight="346.0" prefWidth="400.0" GridPane.columnIndex="1">
+                    <children>
+                        <!-- <Button fx:id="find" layoutX="321.0" layoutY="307.0" mnemonicParsing="false" onAction="#buyTicket" prefHeight="25.0" prefWidth="65.0" text="Kúpiť" /> -->
+                    </children>
+                </Pane>
+            </children>
+        </GridPane>
+    </content>
+</ScrollPane>

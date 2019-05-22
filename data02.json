@@ -1,0 +1,90 @@
+{
+    "nodeIndices": [
+        {
+            "index": 0,
+            "name": "M1_1",
+			"city" : "M1",
+			"indexCity": 1
+        },
+        {
+            "index": 1,
+            "name": "M1_2",
+			"city": "M1",
+			"indexCity": 1
+        },
+		{
+            "index": 2,
+            "name": "M2_1",
+			"city": "M2",
+			"indexCity": 2
+        },
+		{
+            "index": 3,
+            "name": "M2_2",
+			"city": "M2",
+			"indexCity": 2
+        }
+    ],
+    "edges": [
+        {
+            "from": 1,
+            "to": 2,
+            "isTransfer": false,
+            "duration": "00:12",
+            "timetable": [
+                {
+                    "departure": "07:01",
+                    "line": "01"
+                }
+            ]
+        },
+		{
+            "from": 2,
+            "to": 1,
+            "isTransfer": false,
+            "duration": "00:12",
+            "timetable": [
+                {
+                    "departure": "07:15",
+                    "line": "01"
+                }
+            ]
+        },
+		{
+            "from": 0,
+            "to": 3,
+            "isTransfer": false,
+            "duration": "00:10",
+            "timetable": [
+                {
+                    "departure": "07:00",
+                    "line": "01"
+                }
+            ]
+        },
+		{
+            "from": 0,
+            "to": 1,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 1,
+            "to": 0,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 3,
+            "to": 2,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 2,
+            "to": 3,
+            "isTransfer": true,
+            "duration": "00:00"
+        }	
+    ]
+}

@@ -1,0 +1,636 @@
+{
+    "nodeIndices": [
+        {
+            "index": 0,
+            "name": "BA1",
+			"city" : "Bratislava",
+			"indexCity": 1
+        },
+        {
+            "index": 1,
+            "name": "ZA1",
+			"city": "Zilina",
+			"indexCity": 2
+        },
+		{
+            "index": 2,
+            "name": "ZA2",
+			"city": "Zilina",
+			"indexCity": 2
+        },
+		{
+            "index": 3,
+            "name": "ZA3",
+			"city": "Zilina",
+			"indexCity": 2
+        },
+		{
+            "index": 4,
+            "name": "KE1",
+			"city": "Kosice",
+			"indexCity": 3
+        },
+		{
+            "index": 5,
+            "name": "ZV1",
+			"city": "Zvolen",
+			"indexCity": 4
+        },
+		{
+            "index": 6,
+            "name": "ZV2",
+			"city": "Zvolen",
+			"indexCity": 4
+        },
+		{
+            "index": 7,
+            "name": "ZV3",
+			"city": "Zvolen",
+			"indexCity": 4
+        },
+		{
+            "index": 8,
+            "name": "BB1",
+			"city": "Banska Bystrica",
+			"indexCity": 5
+        },
+		{
+            "index": 9,
+            "name": "BB2",
+			"city": "Banska Bystrica",
+			"indexCity": 5
+        },
+		{
+            "index": 10,
+            "name": "BA2",
+			"city": "Bratislava",
+			"indexCity": 1
+        },
+		{
+            "index": 11,
+            "name": "KE2",
+			"city": "Kosice",
+			"indexCity": 3
+        }
+    ],
+    "edges": [
+        {
+            "from": 10,
+            "to": 1,
+            "isTransfer": false,
+            "duration": "03:00",
+            "timetable": [
+                {
+                    "departure": "06:00",
+                    "line": "101"
+                },
+                {
+                    "departure": "08:00",
+                    "line": "102"
+                },
+				{
+                    "departure": "09:00",
+                    "line": "103"
+                },
+				{
+                    "departure": "11:00",
+                    "line": "104"
+                },
+				{
+                    "departure": "12:00",
+                    "line": "105"
+                },
+				{
+                    "departure": "13:00",
+                    "line": "106"
+                },
+				{
+                    "departure": "15:00",
+                    "line": "107"
+                },
+				{
+                    "departure": "18:00",
+                    "line": "108"
+                },
+				{
+                    "departure": "20:00",
+                    "line": "109"
+                }
+            ]
+        },
+		{
+            "from": 1,
+            "to": 10,
+            "isTransfer": false,
+            "duration": "03:00",
+            "timetable": [
+                {
+                    "departure": "09:10",
+                    "line": "201"
+                },
+                {
+                    "departure": "11:10",
+                    "line": "202"
+                },
+				{
+                    "departure": "14:10",
+                    "line": "203"
+                },
+				{
+                    "departure": "16:10",
+                    "line": "204"
+                },
+				{
+                    "departure": "19:10",
+                    "line": "205"
+                },
+				{
+                    "departure": "21:10",
+                    "line": "206"
+                },
+				{
+                    "departure": "23:10",
+                    "line": "207"
+                }
+            ]
+        },
+		{
+            "from": 2,
+            "to": 11,
+            "isTransfer": false,
+            "duration": "04:00",
+            "timetable": [
+                {
+                    "departure": "09:05",
+                    "line": "101"
+                },
+                {
+                    "departure": "11:05",
+                    "line": "102"
+                },
+				{
+                    "departure": "12:05",
+                    "line": "103"
+                },
+				{
+                    "departure": "14:05",
+                    "line": "104"
+                },
+				{
+                    "departure": "15:05",
+                    "line": "105"
+                },
+				{
+                    "departure": "16:05",
+                    "line": "106"
+                },
+				{
+                    "departure": "18:05",
+                    "line": "107"
+                },
+				{
+                    "departure": "21:05",
+                    "line": "108"
+                },
+				{
+                    "departure": "23:05",
+                    "line": "109"
+                }
+            ]
+        },
+		{
+            "from": 11,
+            "to": 2,
+            "isTransfer": false,
+            "duration": "04:00",
+            "timetable": [
+                {
+                    "departure": "05:00",
+                    "line": "201"
+                },
+                {
+                    "departure": "07:00",
+                    "line": "202"
+                },
+				{
+                    "departure": "10:00",
+                    "line": "203"
+                },
+				{
+                    "departure": "12:00",
+                    "line": "204"
+                },
+				{
+                    "departure": "15:00",
+                    "line": "205"
+                },
+				{
+                    "departure": "17:00",
+                    "line": "206"
+                },
+				{
+                    "departure": "19:00",
+                    "line": "207"
+                }
+            ]
+        },
+		{
+            "from": 4,
+            "to": 6,
+            "isTransfer": false,
+            "duration": "02:30",
+            "timetable": [
+                {
+                    "departure": "04:50",
+                    "line": "401"
+                },
+                {
+                    "departure": "07:50",
+                    "line": "402"
+                },
+				{
+                    "departure": "09:50",
+                    "line": "403"
+                },
+				{
+                    "departure": "12:50",
+                    "line": "404"
+                },
+				{
+                    "departure": "15:50",
+                    "line": "405"
+                },
+				{
+                    "departure": "19:50",
+                    "line": "406"
+                }
+            ]
+        },
+		{
+            "from": 6,
+            "to": 4,
+            "isTransfer": false,
+            "duration": "02:30",
+            "timetable": [
+                {
+                    "departure": "09:20",
+                    "line": "301"
+                },
+                {
+                    "departure": "11:20",
+                    "line": "302"
+                },
+				{
+                    "departure": "12:20",
+                    "line": "303"
+                },
+				{
+                    "departure": "14:20",
+                    "line": "304"
+                },
+				{
+                    "departure": "16:20",
+                    "line": "305"
+                },
+				{
+                    "departure": "17:20",
+                    "line": "306"
+                },
+				{
+                    "departure": "19:20",
+                    "line": "307"
+                },
+				{
+                    "departure": "22:20",
+                    "line": "308"
+                }
+            ]
+        },
+		{
+            "from": 5,
+            "to": 0,
+            "isTransfer": false,
+            "duration": "02:00",
+            "timetable": [
+                {
+                    "departure": "07:30",
+                    "line": "401"
+                },
+                {
+                    "departure": "10:30",
+                    "line": "402"
+                },
+				{
+                    "departure": "12:30",
+                    "line": "403"
+                },
+				{
+                    "departure": "15:30",
+                    "line": "404"
+                },
+				{
+                    "departure": "18:30",
+                    "line": "405"
+                },
+				{
+                    "departure": "22:30",
+                    "line": "406"
+                }
+            ]
+        },
+		{
+            "from": 0,
+            "to": 5,
+            "isTransfer": false,
+            "duration": "02:00",
+            "timetable": [
+                {
+                    "departure": "07:15",
+                    "line": "301"
+                },
+                {
+                    "departure": "09:15",
+                    "line": "302"
+                },
+				{
+                    "departure": "10:15",
+                    "line": "303"
+                },
+				{
+                    "departure": "12:15",
+                    "line": "304"
+                },
+				{
+                    "departure": "14:15",
+                    "line": "305"
+                },
+				{
+                    "departure": "15:15",
+                    "line": "306"
+                },
+				{
+                    "departure": "17:15",
+                    "line": "307"
+                },
+				{
+                    "departure": "20:15",
+                    "line": "308"
+                }
+            ]
+        },
+		{
+            "from": 7,
+            "to": 9,
+            "isTransfer": false,
+            "duration": "00:30",
+            "timetable": [
+                {
+                    "departure": "07:30",
+                    "line": "601"
+                },
+                {
+                    "departure": "09:30",
+                    "line": "602"
+                },
+				{
+                    "departure": "10:30",
+                    "line": "603"
+                },
+				{
+                    "departure": "12:30",
+                    "line": "604"
+                },
+				{
+                    "departure": "13:30",
+                    "line": "605"
+                },
+				{
+                    "departure": "15:30",
+                    "line": "606"
+                },
+				{
+                    "departure": "17:30",
+                    "line": "607"
+                },
+				{
+                    "departure": "21:30",
+                    "line": "608"
+                }
+            ]
+        },
+		{
+            "from": 9,
+            "to": 7,
+            "isTransfer": false,
+            "duration": "00:30",
+            "timetable": [
+                {
+                    "departure": "08:40",
+                    "line": "501"
+                },
+                {
+                    "departure": "10:40",
+                    "line": "502"
+                },
+				{
+                    "departure": "12:40",
+                    "line": "503"
+                },
+				{
+                    "departure": "15:40",
+                    "line": "504"
+                },
+				{
+                    "departure": "17:40",
+                    "line": "505"
+                },
+				{
+                    "departure": "22:40",
+                    "line": "506"
+                }
+            ]
+        },
+		{
+            "from": 8,
+            "to": 3,
+            "isTransfer": false,
+            "duration": "01:30",
+            "timetable": [
+                {
+                    "departure": "08:00",
+                    "line": "601"
+                },
+                {
+                    "departure": "10:00",
+                    "line": "602"
+                },
+				{
+                    "departure": "11:00",
+                    "line": "603"
+                },
+				{
+                    "departure": "13:00",
+                    "line": "604"
+                },
+				{
+                    "departure": "14:00",
+                    "line": "605"
+                },
+				{
+                    "departure": "16:00",
+                    "line": "606"
+                },
+				{
+                    "departure": "18:00",
+                    "line": "607"
+                },
+				{
+                    "departure": "22:00",
+                    "line": "608"
+                }
+				
+            ]
+        },
+		{
+            "from": 3,
+            "to": 8,
+            "isTransfer": false,
+            "duration": "01:30",
+            "timetable": [
+                {
+                    "departure": "07:10",
+                    "line": "501"
+                },
+                {
+                    "departure": "09:10",
+                    "line": "502"
+                },
+				{
+                    "departure": "11:10",
+                    "line": "503"
+                },
+				{
+                    "departure": "14:10",
+                    "line": "504"
+                },
+				{
+                    "departure": "16:10",
+                    "line": "505"
+                },
+				{
+                    "departure": "21:10",
+                    "line": "506"
+                }
+				
+            ]
+        },
+		{
+            "from": 10,
+            "to": 0,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 0,
+            "to": 10,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 1,
+            "to": 2,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 2,
+            "to": 1,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 1,
+            "to": 3,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 3,
+            "to": 1,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 2,
+            "to": 3,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 3,
+            "to": 2,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 8,
+            "to": 9,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 9,
+            "to": 8,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 11,
+            "to": 4,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 4,
+            "to": 11,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 5,
+            "to": 7,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 7,
+            "to": 5,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 5,
+            "to": 6,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 6,
+            "to": 5,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 7,
+            "to": 6,
+            "isTransfer": true,
+            "duration": "00:00"
+        },
+		{
+            "from": 6,
+            "to": 7,
+            "isTransfer": true,
+            "duration": "00:00"
+        }		
+    ]
+}
